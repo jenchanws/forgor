@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>She forgor LUL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=DynaPuff:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        height: 100vh;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #efefef;
+        font-size: 2.5rem;
+        font-family: "Coming Soon", cursive;
+      }
+      #number {
+        font-size: 16rem;
+        line-height: 12rem;
+        font-family: "DynaPuff", cursive;
+        display: inline-block;
+        padding: 4rem;
+        margin: 4rem;
+        background-color: #76bfea;
+        color: white;
+        border-radius: 2.5rem;
+      }
+      img {
+        height: 3rem;
+        vertical-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>It has been</div>
+    <div id="number"></div>
+    <div>
+      days since Rose forgor
+      <img src="https://cdn3.emoji.gg/emojis/9452_lul.png" />
+    </div>
+    <script>
+      document.getElementById("number").textContent = Math.round(
+        Math.abs(new Date() - new Date("2022-08-10")) / (24 * 60 * 60 * 1000)
+      ).toString();
+    </script>
+  </body>
+</html>
